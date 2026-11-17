@@ -30,6 +30,56 @@ To be filled in at the final milestone.
 
 make data   # download the frozen snapshot into data/raw/
 
+# Team contribution log
+
+Roles by phase (from the project rotation):
+
+| Student | Nov 17 to 23 | Nov 23 to Dec 7 | Dec 7 to 17 |
+|---|---|---|---|
+| Ehsanul | Data lead | Model lead | Delivery lead |
+| Padma | Model lead | Delivery lead | Data lead |
+| Sandeep | Delivery lead | Data lead | Model lead |
+
+## Week of Nov 17 to 23 
+
+| Student |
+|---|---|---|---|
+| Ehsanul | 
+| Padma | 
+| Sandeep |
+
+## Week of Nov 24 to 30 
+
+| Student |
+|---|---|---|---|
+| Ehsanul | 
+| Padma | 
+| Sandeep |
+
+## Week of Dec 1 to 7 
+
+| Student |
+|---|---|---|---|
+| Ehsanul | 
+| Padma | 
+| Sandeep |
+
+## Week of Dec 8 to 14
+
+| Student |
+|---|---|---|---|
+| Ehsanul | 
+| Padma | 
+| Sandeep |
+
+## Week of Dec 15 to 17 
+
+| Student |
+|---|---|---|---|
+| Ehsanul | 
+| Padma | 
+| Sandeep |
+
 ## Data
 
 Inside Airbnb, Boston, https://insideairbnb.com/get-the-data/. Licensed CC BY 4.0. See data/README.md for the data card.
@@ -38,5 +88,6 @@ Inside Airbnb, Boston, https://insideairbnb.com/get-the-data/. Licensed CC BY 4.
 
 
 ## Attribution
+
 
 Data: Inside Airbnb (CC BY 4.0).
