@@ -3,6 +3,7 @@
 DS 5110, Fall 2026, Northeastern University. Instructor: Jonathan Mwaura.
 
 Team: Ehsanul, Padma, Sandeep
+
 Track: Pricing
 
 ## Question
