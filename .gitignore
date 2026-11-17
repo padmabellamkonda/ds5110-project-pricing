@@ -1,0 +1,8 @@
+
+# Ignore raw and derived data files
+data/raw/*
+data/derived/*
+
+# Keep the directory structure tracked in git
+!data/raw/.gitkeep
+!data/derived/.gitkeep
