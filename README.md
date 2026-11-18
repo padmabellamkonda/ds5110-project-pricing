@@ -43,11 +43,11 @@ Roles by phase (from the project rotation):
 
 ## Week of Nov 17 to 23 
 
-| Student |
+| Student | Role | Contributions Summary | Links
 |---|---|---|---|
-| Ehsanul | 
-| Padma | Added readme, answered what the data cannot answer, answered the proposal question, added contribution log to track
-| Sandeep |
+| Ehsan | Data Lead | Verified Inside Airbnb Boston snapshots (`2026-06-15` and `2026-09-19`), validated SHA-256 checksums against `v0.1-data`, configured `.gitignore` and `data/` layout, and reviewed PR #1. | [PR #1 Review](https://github.com/padmabellamkonda/ds5110-project-pricing/pull/1), [Data Release v0.1-data](https://github.com/padmabellamkonda/ds5110-project-pricing/releases/tag/v0.1-data) |
+| Padma | Model Lead | Added readme, answered what the data cannot answer, answered the proposal question, added contribution log to track
+| Sandeep | Delivery Lead |
 
 ## Week of Nov 24 to 30 
 
