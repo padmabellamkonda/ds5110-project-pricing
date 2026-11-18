@@ -46,7 +46,7 @@ Roles by phase (from the project rotation):
 | Student |
 |---|---|---|---|
 | Ehsanul | 
-| Padma | 
+| Padma | Added readme, answered what the data cannot answer, answered the proposal question, added contribution log to track
 | Sandeep |
 
 ## Week of Nov 24 to 30 
