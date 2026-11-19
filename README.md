@@ -29,7 +29,16 @@ To be filled in at the final milestone.
 
 ## How to run
 
-make data   # download the frozen snapshot into data/raw/
+You need Python 3.12 or newer (the pinned packages require it), `make` and `curl`.
+
+```bash
+git clone https://github.com/padmabellamkonda/ds5110-project-pricing.git
+cd ds5110-project-pricing
+make env    # create .venv and install the pinned requirements.txt
+make data   # download the frozen snapshots into data/raw/ and verify them against MANIFEST.sha256
+```
+
+`make data` is safe to re-run: it only downloads files that are missing, stops at the first failed download, and ends by checking every file's SHA-256. `make all` currently runs `data` only; `audit`, `model` and `site` are added at later milestones.
 
 # Team contribution log
 
@@ -47,7 +56,7 @@ Roles by phase (from the project rotation):
 |---|---|---|---|
 | Ehsan | Data Lead | Verified Inside Airbnb Boston snapshots (`2026-06-15` and `2026-09-19`), validated SHA-256 checksums against `v0.1-data`, configured `.gitignore` and `data/` layout, and reviewed PR #1. | [PR #1 Review](https://github.com/padmabellamkonda/ds5110-project-pricing/pull/1), [Data Release v0.1-data](https://github.com/padmabellamkonda/ds5110-project-pricing/releases/tag/v0.1-data) |
 | Padma | Model Lead | Added readme, answered what the data cannot answer, answered the proposal question, added contribution log to track
-| Sandeep | Delivery Lead |
+| Sandeep | Delivery Lead | Built the repo skeleton: pinned `requirements.txt`, folder stubs for `sql/`, `src/`, `tests/` and `docs/`, and the Makefile `env` and `all` targets. Reviewed PR #1. Filled in the README run instructions, AI use statement and attribution. | [PR #2](https://github.com/padmabellamkonda/ds5110-project-pricing/pull/2), [commit 2043219](https://github.com/padmabellamkonda/ds5110-project-pricing/commit/2043219cfa69cf1018239f573c2bc47f813d9aa3), [PR #1 review](https://github.com/padmabellamkonda/ds5110-project-pricing/pull/1#pullrequestreview-5948488321) |
 
 ## Week of Nov 24 to 30 
 
@@ -87,8 +96,9 @@ Inside Airbnb, Boston, https://insideairbnb.com/get-the-data/. Licensed CC BY 4.
 
 ## Use of AI assistants
 
+- **Claude Code (Anthropic):** used by Sandeep for the delivery work: drafting the repo skeleton, the Makefile targets and the README run instructions, and for checking the team repository's state on GitHub. Sandeep reviewed and edited the output and is responsible for it.
+- Ehsanul and Padma: add the tools you used and what you used them for here.
 
 ## Attribution
 
-
-Data: Inside Airbnb (CC BY 4.0).
+Data: [Inside Airbnb](https://insideairbnb.com/get-the-data/), Boston, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). We downloaded the 2026-06-15 and 2026-09-19 snapshots and will clean and transform them; Inside Airbnb does not endorse this project.
