@@ -1,4 +1,4 @@
-.PHONY: all data env
+.PHONY: all data env audit
 
 RELEASE_URL = https://github.com/padmabellamkonda/ds5110-project-pricing/releases/download/v0.1-data
 
@@ -7,15 +7,14 @@ SHA_CHECK := $(shell command -v sha256sum >/dev/null 2>&1 && echo "sha256sum -c"
 FILES = 2026-06-15_listings.csv.gz 2026-06-15_calendar.csv.gz 2026-06-15_reviews.csv.gz 2026-06-15_neighbourhoods.geojson \
         2026-09-19_listings.csv.gz 2026-09-19_calendar.csv.gz 2026-09-19_reviews.csv.gz 2026-09-19_neighbourhoods.geojson
 
-# Later milestones add audit, model and site, and extend all.
-all: data
+PYTHON := $(shell command -v python3 >/dev/null 2>&1 && echo "python3" || echo "python")
 
-# Create a local virtual environment from the pinned requirements.
+all: data audit
+
 env:
-	python3 -m venv .venv
+	$(PYTHON) -m venv .venv
 	.venv/bin/pip install -r requirements.txt
 
-# Download the frozen snapshots into data/raw/ and verify them against MANIFEST.sha256.
 data:
 	mkdir -p data/raw
 	@for file in $(FILES); do \
@@ -26,3 +25,6 @@ data:
 		fi; \
 	done
 	$(SHA_CHECK) MANIFEST.sha256
+
+audit: data
+	$(PYTHON) src/audit.py
