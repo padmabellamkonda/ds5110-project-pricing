@@ -60,9 +60,9 @@ Roles by phase (from the project rotation):
 
 ## Week of Nov 24 to 30 
 
-| Student |
+| Student | Role | Contributions Summary | Links
 |---|---|---|---|
-| Ehsanul | 
+| Ehsanul | Data Lead | Built reproducible data audit script (`src/audit.py`), wired `make audit` into `Makefile`, and generated `docs/data_audit.md` covering schema, missingness, price/spatial anomalies, and cross-snapshot drift (`2026-06-15` vs. `2026-09-19`). | [#<PR_NUMBER>](https://github.com/padmabellamkonda/ds5110-project-pricing/pull/<PR_NUMBER>) |
 | Padma | 
 | Sandeep |
 
@@ -97,6 +97,7 @@ Inside Airbnb, Boston, https://insideairbnb.com/get-the-data/. Licensed CC BY 4.
 ## Use of AI assistants
 
 - **Claude Code (Anthropic):** used by Sandeep for the delivery work: drafting the repo skeleton, the Makefile targets and the README run instructions, and for checking the team repository's state on GitHub. Sandeep reviewed and edited the output and is responsible for it.
+- **Gemini (Google Assistance):** used by Ehsanul to draft `src/audit.py`, structure the `make audit` target in `Makefile`, and verify Git workflow steps for the Data Audit milestone. Ehsanul ran, verified, and edited all generated outputs against the frozen Boston snapshots and is responsible for the final code and report.
 
 ## Attribution
 
